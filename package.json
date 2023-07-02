@@ -1,0 +1,55 @@
+{
+  "name": "module-federation-angular",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start:app1": "ng serve --live-reload false --configuration development",
+    "start:app2": "ng serve  --live-reload false app2-restaurant --configuration development",
+    "start:app3": "ng serve --live-reload false app3-orders --configuration development",
+    "build:app1": "ng build",
+    "build:app2": "ng build app2-restaurant",
+    "build:app3": "ng build app3-orders",
+    "build:utils": "ng build utils",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "start:all": "npm run start:app1 & npm run start:app2 & npm run start:app3"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~15.2.8",
+    "@angular/common": "~15.2.8",
+    "@angular/compiler": "~15.2.8",
+    "@angular/core": "~15.2.8",
+    "@angular/forms": "~15.2.8",
+    "@angular/platform-browser": "~15.2.8",
+    "@angular/platform-browser-dynamic": "~15.2.8",
+    "@angular/router": "~15.2.8",
+    "@tailwindcss/typography": "^0.5.1",
+    "place-my-order-assets": "^0.2.2",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.2.0",
+    "zone.js": "~0.11.4"
+  },
+  "resolutions": {
+    "webpack": "5.68.0"
+  },
+  "devDependencies": {
+    "@angular-builders/custom-webpack": "^15.0.0",
+    "@angular-devkit/build-angular": "~15.2.8",
+    "@angular/cli": "~15.2.8",
+    "@angular/compiler-cli": "~15.2.8",
+    "@tailwindcss/forms": "^0.4.0-alpha.2",
+    "@types/jasmine": "~3.8.0",
+    "@types/node": "^12.11.1",
+    "jasmine-core": "~3.8.0",
+    "karma": "~6.3.15",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "ng-packagr": "^13.2.1",
+    "tailwindcss": "^3.0.19",
+    "typescript": "~4.9.5",
+    "webpack": "^5.88.1"
+  }
+}
